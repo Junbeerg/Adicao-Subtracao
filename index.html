@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa simplesão porque ta foda</title>
+    <style>
+        h1{
+            font-size: 100px;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            bottom: 5%;
+            margin: 0;
+        }
+        input[type=button]{
+            font-size: 100px;          
+        }
+        #mais{
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 45%;           
+            margin: 0;
+        }
+        #menos{
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 55%;
+            margin: 0;
+        }
+    </style>  
+</head>
+<body>
+    <h1 id="iniciar">0</h1>
+    <input type="button" onclick="aumentar()" value="+" id="mais">
+    <input type="button" onclick="diminuir()" value="-" id="menos">
+
+    <script>
+			var iniciador = +document.getElementById("iniciar").innerHTML;
+            function aumentar(){
+                document.getElementById("iniciar").innerHTML = iniciador += 1;
+            }
+            function diminuir(){
+                document.getElementById("iniciar").innerHTML = iniciador -= 1;
+            }
+    </script>
+</body>
+</html>
